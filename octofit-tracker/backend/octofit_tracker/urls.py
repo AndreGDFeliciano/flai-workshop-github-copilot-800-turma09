@@ -41,6 +41,7 @@ router.register(r'leaderboard', LeaderboardViewSet)
 def api_root(request, format=None):
     """
     API root view that provides links to all available endpoints
+    Codespace URL format: https://$CODESPACE_NAME-8000.app.github.dev/api/endpoint/
     """
     # Build base URL using Codespace environment variable
     codespace_name = os.getenv('CODESPACE_NAME')
